@@ -2,7 +2,6 @@ const path = require("path");
 const express = require("express");
 const nodemailer = require("nodemailer");
 const app = express();
-require('dotenv').config();
 
 app.use(express.static(path.join(__dirname, "pages")));
 app.use(express.static(path.join(__dirname, 'assets/css')));
