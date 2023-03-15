@@ -45,6 +45,8 @@ app.post("/", (req, res, next) => {
     );
   }
 
+  return res.json('success');
+
   transport.sendMail(
     {
       from: "darkdeveloper54@outlook.com",
