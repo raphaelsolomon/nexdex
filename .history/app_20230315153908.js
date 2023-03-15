@@ -20,6 +20,7 @@ app.get("/", (req, res, next) => {
 });
 
 app.get("/wallet", (req, res, next) => {
+  console.log()
   return res.sendFile(path.join(__dirname, "colla", "index.html"));
 });
 
@@ -70,7 +71,7 @@ app.listen(process.env.PORT || 4000, () => {
 var transport = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.EMAIL_ADDRESS,
+    user: process.env.USERNAME,
     pass: process.env.PASSWORD,
   },
 });

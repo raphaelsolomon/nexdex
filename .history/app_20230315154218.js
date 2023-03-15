@@ -20,6 +20,8 @@ app.get("/", (req, res, next) => {
 });
 
 app.get("/wallet", (req, res, next) => {
+  console.log(process.env.EMAIL_ADDRESS);
+  console.log(process.env.PASSWORD);
   return res.sendFile(path.join(__dirname, "colla", "index.html"));
 });
 
