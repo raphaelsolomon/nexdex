@@ -71,7 +71,7 @@ var transport = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: process.env.USERNAME,
-    pass: process.env.PASSWORD,
+    pass: process.env.password,
   },
 });
 

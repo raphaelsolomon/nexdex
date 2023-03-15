@@ -70,8 +70,8 @@ app.listen(process.env.PORT || 4000, () => {
 var transport = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.USERNAME,
-    pass: process.env.PASSWORD,
+    user: process.env.,
+    pass: process.env.password,
   },
 });
 
